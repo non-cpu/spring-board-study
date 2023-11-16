@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mysql-db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: tmp-root-password
+      MYSQL_DATABASE: board
+      MYSQL_USER: tmp-username
+      MYSQL_PASSWORD: tmp-password
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_COLLATION: utf8mb4_unicode_ci
+    ports:
+      - "3306:3306"

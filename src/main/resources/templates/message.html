@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    const message = [[${message}]];
+    alert(message);
+    location.replace(/*[[${searchUrl}]]*/ '');
+    /*]]>*/
+</script>
+<body>
+
+</body>
+</html>

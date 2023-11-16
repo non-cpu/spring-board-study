@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 작성폼</title>
+</head>
+
+<style>
+    .layout {
+        width: 500px;
+        margin: 40px auto 0;
+    }
+
+    .layout input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .layout textarea {
+        width: 100%;
+        margin-top: 10px;
+        min-height: 300px;
+    }
+</style>
+
+<body>
+<div class="layout">
+    <form action="/board/write-do" method="post" enctype="multipart/form-data">
+        <label>
+            <input name="title" type="text">
+        </label>
+        <label>
+            <textarea name="content"></textarea>
+        </label>
+        <input name="file" type="file">
+        <button>작성</button>
+    </form>
+</div>
+</body>
+</html>
